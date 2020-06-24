@@ -57,7 +57,7 @@ def setup_data
 end
 
 def get_data
-  uri = URI('https://api.exchangeratesapi.io/latest?base=EURO')
+  uri = URI('https://api.exchangeratesapi.io/latest?base=EUR')
   response = Net::HTTP.get(uri)
   JSON.parse(response)
 end
