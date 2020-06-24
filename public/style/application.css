@@ -1,0 +1,39 @@
+.pr-2 { padding-right: 2px !important; }
+.pl-2 { padding-left: 2px !important; }
+.pl-4 { padding-left: 4px !important; }
+.pr-4 { padding-right: 4px !important; }
+
+.container {
+    margin-top: 100px;
+    width: auto;
+    max-width: 300px;
+    padding: 0 15px;
+    border: 1px #CCC dotted;
+}
+
+.header {
+    height: 40px;
+    display: block;
+    background: #e2e2e2;
+}
+
+.update_line {
+    height: 40px;
+    padding: 10px 5px;
+    background-color: #CCC;
+}
+
+.give_block, .change_block, .get_block {
+    height: 40px;
+    padding: 10px 0;
+}
+
+.change_block {
+    float: right;
+    display: block;
+    padding-right: 4px;
+}
+
+.get_block {
+    clear: both;
+}

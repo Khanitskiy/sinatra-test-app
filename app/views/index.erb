@@ -1,0 +1,41 @@
+<div class="container">
+
+  <div class="calculator">
+    <div class="header row">
+      <h4 style="text-align: center">Конвертер валют</h4>
+    </div>
+    <div class="update_line row">
+      <input type="submit" id="refresh_date" value="Оновити">
+      Даннi за: <span id="date"><%= @date %></span>
+    </div>
+    <div class="give_block row">
+      <div class="col col-lg-8 pr-2 pl-4">
+        <input type="text" id="give_quantity" class="form-control" required="" autofocus="">
+      </div>
+      <div class="col-lg-4 pl-2 pr-4">
+        <select class="form-control" id="give_currency">
+          <% @currences.each do |el| %>
+          <option><%= el %></option>
+          <% end %>
+        </select>
+      </div>
+    </div>
+    <div class="change_block row">
+      <button type="button" id="get_result" class="btn btn-light">=</button>
+      <button type="button" id="change" class="btn btn-light">Змінити</button>
+    </div>
+    <div class="get_block row">
+      <div class="col col-lg-8 pr-2 pl-4">
+        <input type="text" id="get_quantity" class="form-control" required="" autofocus="">
+      </div>
+      <div class="col-lg-4 pl-2 pr-4">
+        <select class="form-control" id="get_currency">
+          <% @currences.each do |el| %>
+            <option><%= el %></option>
+          <% end %>
+        </select>
+      </div>
+    </div>
+    <br>
+  </div>
+</div>
